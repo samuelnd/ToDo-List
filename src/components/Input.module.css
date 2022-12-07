@@ -1,0 +1,120 @@
+article {
+    width: 736px;
+    margin: 0 auto;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    margin-top: calc( 1rem - 1.8rem - 1rem);
+}
+
+.search input {
+    width: 638px;
+    height: 54px;
+    padding: 1rem;
+
+    font-size: 1rem;
+    line-height: 140%;
+
+    color: var(--gray-300);
+
+    background: var(--gray-500);
+    border: 1px solid var(--gray-700);
+    border-radius: 8px;
+}
+
+.search button {
+    width: 90px;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 1rem;
+
+    font-weight: bold;
+    line-height: 140%;
+    color: var(--gray-100);
+
+    background: var(--blue-dark);
+    border: 0;
+    border-radius: 8px;
+
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.search button:hover {
+    background: var(--blue);
+}
+
+.tasks {
+    width: 736px;
+    margin: 0 auto;
+    padding-top: 4rem;
+    padding-bottom: 2.4rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    border-bottom: 1px solid var(--gray-400);
+}
+
+.create {
+    display: flex;
+    gap: 8px;
+
+    font-size: 0.87rem;
+    font-weight: bold;
+    line-height: 1rem;
+
+    color: var(--blue);
+}
+
+.create span {
+    width: 25px;
+    height: 19px;
+
+
+    background: var(--gray-400);
+    border-radius: 999px;
+} 
+
+.create span p {
+    color: var(--gray-200);
+    margin: 1.5px 7.2px;
+}
+
+.concluded {
+    display: flex;
+    gap: 8px;
+    font-size: 0.87rem;
+    font-weight: bold;
+
+    color: var(--purple);
+}
+
+.concluded span {
+    width: 25px;
+    height: 19px;
+
+
+    background: var(--gray-400);
+    border-radius: 999px;
+} 
+
+.concluded span p {
+    color: var(--gray-200);
+    margin: 1.5px 7.2px;
+}
+
+.checkTask input[type="checkbox"]:checked ~ p{
+    text-decoration: line-through;
+    opacity: 0.4;
+
+}
